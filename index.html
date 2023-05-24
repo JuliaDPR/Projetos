@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Decodificador de Texto</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    </head>
+    <body>
+
+        <header class="cabecalho">
+            <img class="logo" src="logo-azul-decodificador.png" alt="logo da alura">
+        </header>
+
+        <main class="main-container">
+            <div class="inputs">
+                <h1 id="h1">BEM VINDO</h1>
+                <textarea id="input-texto" placeholder="Digite seu texto"></textarea>
+
+                <div class="buttons">
+                    <div class="container-btn">
+                        <button onclick="criptografar()" id="btn-criptografar">Criptografar</button>
+                        <button onclick="descriptografar()" id="btn-descriptografar">Descriptografar</button>
+                    </div>
+                </div>
+
+                <div class="conteudo-container-input">
+                    <span class="material-symbols-outlined">error</span>
+                    <p class="frase-alerta">Apenas letras minúsculas e sem acento.</p>
+                </div>
+            </div>
+            
+            <div class="container-output">
+                <div class="container-conteudo">
+                    <img class="ilustracao" src="empty-icon.png" alt="Ilustração de uma pessoa abrindo a caixa de correio vazia">
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <span>Digite um texto que você deseja criptografar ou descriptografar.</span>
+                </div>
+
+                <div class="container-copiar">
+                    <button type="button" class="btn-copiar" id="copiar" onclick="copiar()"><span class="material-icons">content_copy</span></button>
+                </div> 
+            </div>
+        </main>
+        <script src="decoder.js"></script>
+    </body>
+</html>
